@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="26.172">
+    <testcase classname="LC Waikiki Project" name="LC Waikiki Sayfasina Giris" time="16.384">
+        <failure message="expected [LC Waikiki | İlk Alışverişte Kargo Bedava! - LC Waikiki] but found [LC Waikiki - Online Alışveriş Sitesi, Moda Senin Seçimin - LC Waikiki]" type="java.lang.AssertionError"><![CDATA[Given kullanici lcwaikiki sayfasina gider...................................passed
+Then kullanici lcwaikiki sayfasini dogrular.................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [LC Waikiki | İlk Alışverişte Kargo Bedava! - LC Waikiki] but found [LC Waikiki - Online Alışveriş Sitesi, Moda Senin Seçimin - LC Waikiki]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at stepdefinitions.StepDefs.kullanici_lcwaikiki_sayfasini_dogrular(StepDefs.java:25)
+	at ✽.kullanici lcwaikiki sayfasini dogrular(file:///C:/Users/rayku/IdeaProjects/basic_selenium_lcw/./src/test/resources/lcwaikiki.feature:7)
+]]></failure>
+    </testcase>
+    <testcase classname="LC Waikiki Project" name="Kategori Secimi" time="1.884">
+        <system-out><![CDATA[Given kullanici erkek kategori sayfasina gider..............................passed
+Then kullanici erkek kategori sayfasini dogrular............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LC Waikiki Project" name="Urun Secimi" time="2.079">
+        <system-out><![CDATA[Given kullanici ayakkabi urun sayfasina gider...............................passed
+Then kullanici ayakkabi urun sayfasini dogrular.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LC Waikiki Project" name="Urun Sepete Ekleme" time="1.805">
+        <system-out><![CDATA[Given kullanici file detayli ayakkabiyi sepete ekleme.......................passed
+Then kullanici dogru urunu sepete ekledigini dogrular.......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LC Waikiki Project" name="Sepete Gidis" time="1.868">
+        <system-out><![CDATA[Given kullanici sepet sayfasina gider.......................................passed
+Then kullanici sepet sayfasini dogrular.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="LC Waikiki Project" name="Anasayfaya Donus" time="1.806">
+        <system-out><![CDATA[Given kullanici anasayfaya doner............................................passed
+Then kullanici anasayfaya dondugunu dogrular................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
