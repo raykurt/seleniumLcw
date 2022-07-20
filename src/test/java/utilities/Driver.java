@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
 public class Driver {
 
     private static WebDriver driver;
-    private static int timeout = 5;
+    private static int timeout = 8;
 
     private Driver() {
     }
@@ -60,7 +60,7 @@ public class Driver {
         for (int i = 0; i < timeout; i++) {
             try {
                 element.click();
-                return;
+                break;
             } catch (WebDriverException e) {
                 wait(1);
             }

@@ -14,5 +14,17 @@ public class Anasayfa {
     @FindBy(xpath = "//*[@id=\"cookieseal-banner\"]/div/button[2]")
     public WebElement anladimCookie;
 
+    @FindBy(xpath = "//span[@data-bind-menu='notification|text_editing']")
+    public WebElement firsatKutusu;
+
+    @FindBy(xpath = "//a[@href='https://www.lcwaikiki.com/tr-TR/TR/lp/32-33-erkek']")
+    public WebElement erkekKategoriSecim;
+
+    @FindBy(xpath = "//span[text()='Sepetim']")
+    public WebElement sepetimButonu;
+
+    @FindBy(xpath = "//a[@class='main-header-logo']")
+    public WebElement anaBaslikLogosu;
+
 
 }

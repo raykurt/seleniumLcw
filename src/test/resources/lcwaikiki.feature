@@ -11,15 +11,11 @@ Feature: LC Waikiki Project
     Given kullanici erkek kategori sayfasina gider
     Then kullanici erkek kategori sayfasini dogrular
 
-  @urunSecimi
+  @urunSecSepeteEkle
   Scenario: Urun Secimi
-    Given kullanici ayakkabi urun sayfasina gider
-    Then kullanici ayakkabi urun sayfasini dogrular
-
-  @urunuSepeteEkleme
-  Scenario: Urun Sepete Ekleme
-    Given kullanici file detayli ayakkabiyi sepete ekleme
-    Then kullanici dogru urunu sepete ekledigini dogrular
+    Given kullanici tisort urun sayfasina gider
+    Then kullanici tisort urun sayfasini dogrular
+    And kullanici bisiklet yaka basic tisort sepete ekleme
 
   @sepeteGidis
   Scenario: Sepete Gidis
