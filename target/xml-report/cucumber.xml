@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="79.035">
-    <testcase classname="LC Waikiki Project" name="LC Waikiki Sayfasina Giris" time="30.794">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="35.449">
+    <testcase classname="LC Waikiki Project" name="LC Waikiki Sayfasina Giris" time="12.211">
         <system-out><![CDATA[Given kullanici lcwaikiki sayfasina gider...................................passed
 Then kullanici lcwaikiki sayfasini dogrular.................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LC Waikiki Project" name="Kategori Secimi" time="4.986">
+    <testcase classname="LC Waikiki Project" name="Kategori Secimi" time="3.633">
         <system-out><![CDATA[Given kullanici erkek kategori sayfasina gider..............................passed
 Then kullanici erkek kategori sayfasini dogrular............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LC Waikiki Project" name="Urun Secimi" time="30.391">
+    <testcase classname="LC Waikiki Project" name="Urun Secimi" time="11.783">
         <system-out><![CDATA[Given kullanici tisort urun sayfasina gider.................................passed
 Then kullanici tisort urun sayfasini dogrular...............................passed
 And kullanici bisiklet yaka basic tisort sepete ekleme......................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LC Waikiki Project" name="Sepete Gidis" time="10.096">
+    <testcase classname="LC Waikiki Project" name="Sepete Gidis" time="4.586">
         <system-out><![CDATA[Given kullanici sepet sayfasina gider.......................................passed
 Then kullanici sepet sayfasini dogrular.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="LC Waikiki Project" name="Anasayfaya Donus" time="2.331">
+    <testcase classname="LC Waikiki Project" name="Anasayfaya Donus" time="2.896">
         <system-out><![CDATA[Given kullanici anasayfaya doner............................................passed
 Then kullanici anasayfaya dondugunu dogrular................................passed
 ]]></system-out>
