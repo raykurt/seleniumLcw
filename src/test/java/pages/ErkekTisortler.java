@@ -19,5 +19,4 @@ public class ErkekTisortler {
 
     @FindBy(id = "pd_add_to_cart")
     public WebElement sepeteEkleButonu;
-
 }
