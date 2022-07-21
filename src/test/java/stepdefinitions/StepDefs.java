@@ -1,6 +1,8 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.Anasayfa;
 import pages.ErkekKategorisi;
@@ -13,12 +15,13 @@ public class StepDefs {
     Anasayfa anasayfaObject = new Anasayfa();
     ErkekKategorisi erkekKategoriObject = new ErkekKategorisi();
     ErkekTisortler erkekTisortObject = new ErkekTisortler();
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(),20);
 
     @Given("kullanici lcwaikiki sayfasina gider")
     public void kullanici_lcwaikiki_sayfasina_gider() {
         Driver.getDriver().navigate().to("https://www.lcwaikiki.com/tr-TR/TR");
-        Driver.waitAndClick(anasayfaObject.anladimCookie);
-        Driver.waitAndClick(anasayfaObject.firsatKutusu);
+        wait.until(ExpectedConditions.elementToBeClickable(anasayfaObject.anladimCookie));
+        anasayfaObject.anladimCookie.click();
     }
 
     @Then("kullanici lcwaikiki sayfasini dogrular")
@@ -28,7 +31,8 @@ public class StepDefs {
 
     @Given("kullanici erkek kategori sayfasina gider")
     public void kullanici_erkek_kategori_sayfasina_gider() {
-        Driver.waitAndClick(anasayfaObject.erkekKategoriSecim);
+        wait.until(ExpectedConditions.elementToBeClickable(anasayfaObject.erkekKategoriSecim));
+        anasayfaObject.erkekKategoriSecim.click();
     }
 
     @Then("kullanici erkek kategori sayfasini dogrular")
@@ -38,7 +42,8 @@ public class StepDefs {
 
     @Given("kullanici tisort urun sayfasina gider")
     public void kullanici_tisort_urun_sayfasina_gider() {
-        Driver.waitAndClick(erkekKategoriObject.erkekTisortSecim);
+        wait.until(ExpectedConditions.elementToBeClickable(erkekKategoriObject.erkekTisortSecim));
+        erkekKategoriObject.erkekTisortSecim.click();
     }
 
     @Then("kullanici tisort urun sayfasini dogrular")
@@ -48,14 +53,17 @@ public class StepDefs {
 
     @And("kullanici bisiklet yaka basic tisort sepete ekleme")
     public void kullanici_bisiklet_yaka_basic_tisort_sepete_ekleme() {
-        Driver.waitAndClick(erkekTisortObject.bisikletYakaBasicTisort);
+        wait.until(ExpectedConditions.elementToBeClickable(erkekTisortObject.bisikletYakaBasicTisort));
+        erkekTisortObject.bisikletYakaBasicTisort.click();
         Driver.waitAndClick(erkekTisortObject.beden2XL);
-        Driver.waitAndClick(erkekTisortObject.sepeteEkleButonu);
+        wait.until(ExpectedConditions.elementToBeClickable(erkekTisortObject.sepeteEkleButonu));
+        erkekTisortObject.sepeteEkleButonu.click();
     }
 
     @Given("kullanici sepet sayfasina gider")
     public void kullanici_sepet_sayfasina_gider() {
-        Driver.waitAndClick(anasayfaObject.sepetimButonu);
+        wait.until(ExpectedConditions.elementToBeClickable(anasayfaObject.sepetimButonu));
+        anasayfaObject.sepetimButonu.click();
     }
 
     @Then("kullanici sepet sayfasini dogrular")
@@ -65,7 +73,8 @@ public class StepDefs {
 
     @Given("kullanici anasayfaya doner")
     public void kullanici_anasayfaya_doner() {
-        Driver.waitAndClick(anasayfaObject.anaBaslikLogosu);
+        wait.until(ExpectedConditions.elementToBeClickable(anasayfaObject.anaBaslikLogosu));
+        anasayfaObject.anaBaslikLogosu.click();
     }
 
     @Then("kullanici anasayfaya dondugunu dogrular")
