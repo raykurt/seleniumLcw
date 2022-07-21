@@ -13,5 +13,4 @@ public class ErkekKategorisi {
 
     @FindBy(xpath = "//a[@href='https://www.lcwaikiki.com/tr-TR/TR/etiket/erkek-trend-giyim-tisort']")
     public WebElement erkekTisortSecim;
-
 }
